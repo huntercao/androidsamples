@@ -21,7 +21,7 @@ public class AudioRecordTest extends Activity {
     private MediaPlayer mPlayer = null;
     private boolean mStartPlaying = true;
 
-    
+
     class RecordButton extends Button {
         boolean mStartRecording = true;
 
