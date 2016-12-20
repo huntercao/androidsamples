@@ -5,12 +5,15 @@ import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
 public class AudioRecordTest extends Activity {
+
+    private static String mFileName = null;
 
 
     private RecordButton mRecordButton = null;
@@ -63,6 +66,11 @@ public class AudioRecordTest extends Activity {
             setText("Start playing");
             setOnClickListener(clicker);
         }
+    }
+
+    public AudioRecordTest() {
+        mFileName = Environment.getExternalStorageDirectory().getAbsolutePath();
+        mFileName += "/audiorecordtest.3gp";
     }
 
     @Override
