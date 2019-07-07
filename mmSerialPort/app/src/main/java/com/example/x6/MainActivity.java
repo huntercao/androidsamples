@@ -20,7 +20,7 @@ import java.io.OutputStream;
 import java.io.IOException;
 import java.io.File;
 
-import com.example.x6.SerialPort;
+import com.example.x6.serial.SerialPort;
 
 public class MainActivity extends AppCompatActivity {
     private TextView mTextMessage;

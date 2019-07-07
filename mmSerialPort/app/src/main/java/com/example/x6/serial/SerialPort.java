@@ -1,4 +1,4 @@
-package com.example.x6;
+package com.example.x6.serial;
 
 /**
  * Created by X6 on 2017/5/4.
