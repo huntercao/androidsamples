@@ -3,4 +3,12 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+    <string name="sent_bytes">Sent bytes</string>
+    <string name="received_back">Received back</string>
+    <string name="lost_bytes">Lost bytes</string>
+    <string name="corrupted_bytes">Corrupted bytes</string>
+    <string name="zero">0</string>
+
+    <string name="button_start">Start</string>
 </resources>

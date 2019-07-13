@@ -36,8 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:onClick="onClick_set_button"
+        android:text="@string/button_start"
         app:layout_constraintStart_toStartOf="@+id/message"
         app:layout_constraintTop_toBottomOf="@+id/message" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.x6;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -49,6 +50,18 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    public void onClick_set_button(View view) {
+        /*
+        init_serial();
+        read_serial();
+        write_serial();
+        */
+        Intent intent;
+        intent = new Intent(this, LoopbackActivity.class);
+        startActivity(intent);
+
+    }
+
     private void init_serial() {
         try {
             serialttyS1 = new SerialPort(new File("/dev/ttyS1"),115200,0);
@@ -83,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
+        /*
         final Button buttonSerial = findViewById(R.id.set_button);
         buttonSerial.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
@@ -91,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 write_serial();
             }
         });
+        */
     }
 
 }
