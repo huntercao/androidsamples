@@ -1,5 +1,6 @@
 package com.codehunter.minmetertestapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -51,5 +52,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void onClick_set_button(View view) {
+        Intent intent;
+        intent = new Intent(this, LoopbackActivity.class);
+        startActivity(intent);
     }
 }
