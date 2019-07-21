@@ -1,4 +1,4 @@
-package com.codehunter.minmetertestapp.serialport;
+package com.codehunter.minmetertestapp;
 
 import android.util.Log;
 
