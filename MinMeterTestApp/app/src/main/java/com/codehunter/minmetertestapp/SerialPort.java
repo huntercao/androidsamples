@@ -20,12 +20,9 @@ public class SerialPort {
 
     public SerialPort(File device, int baudrate, int flags) throws SecurityException, IOException {
 
-//        检查访问权限，如果没有读写权限，进行文件操作，修改文件访问权限
         if (!device.canRead() || !device.canWrite()) {
             try {
-                //通过挂在到linux的方式，修改文件的操作权限
                 Process su = Runtime.getRuntime().exec("/system/xbin/su");
-                //一般的都是/system/bin/su路径，有的也是/system/xbin/su
                 String cmd = "chmod 777 " + device.getAbsolutePath() + "\n" + "exit\n";
                 Log.e("cmd :",cmd);
                 su.getOutputStream().write(cmd.getBytes());
@@ -60,17 +57,12 @@ public class SerialPort {
         return mFileOutputStream;
     }
 
-    // JNI(调用java本地接口，实现串口的打开和关闭)
-    /**
-     * @param path     串口设备的据对路径
-     * @param baudrate 波特率
-     * @param flags    校验位
-     */
+
     private native static FileDescriptor open(String path, int baudrate, int flags);
 
     public native void close();
 
-    static {//加载jni下的C文件库
+    static {
         System.loadLibrary("SerialPort");
     }
 }
