@@ -28,4 +28,15 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+    <Button
+        android:id="@+id/consolereceived_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Received Console"
+        android:onClick="onClick_consolereceived"
+        app:layout_constraintStart_toStartOf="@+id/set_button"
+        app:layout_constraintTop_toBottomOf="@+id/set_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

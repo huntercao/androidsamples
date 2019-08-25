@@ -59,4 +59,10 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(this, LoopbackActivity.class);
         startActivity(intent);
     }
+
+    public void onClick_consolereceived(View view){
+        Intent intent;
+        intent = new Intent(this, ConsoleReceivedActivity.class);
+        startActivity(intent);
+    }
 }
