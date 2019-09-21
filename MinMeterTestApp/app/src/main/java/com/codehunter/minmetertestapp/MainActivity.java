@@ -65,4 +65,9 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(this, ConsoleReceivedActivity.class);
         startActivity(intent);
     }
+    public void onClick_consolesend(View view) {
+        Intent intent;
+        intent = new Intent(this, ConsoleSendActivity.class);
+        startActivity(intent);
+    }
 }
