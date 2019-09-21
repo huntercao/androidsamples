@@ -4,15 +4,15 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConsoleSendActivity">
+    tools:context=".ConsoleReceivedActivity">
 
     <EditText
-        android:id="@+id/EditTextSend"
+        android:id="@+id/EditTextReception"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:gravity="top"
-        android:hint="Send"
+        android:hint="Reception"
         android:scrollbarStyle="insideOverlay"
         android:isScrollContainer="true">
     </EditText>
